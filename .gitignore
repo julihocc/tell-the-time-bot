@@ -1,0 +1,25 @@
+# Rasa specific files
+__pycache__/
+actions/__pycache__/
+models/
+logs/
+data/
+
+# Python virtual environment
+venv/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Compiled Python files
+*.pyc
+
+# Dependency directories
+bin/
+lib/
+include/
+
+# Miscellaneous
+.DS_Store 
+.rasa/
