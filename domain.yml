@@ -5,28 +5,31 @@ session_config:
   carry_over_slots_to_new_session: true
 
 intents:
-  - saludar
-  - despedirse
-  - consultar_tiempo
-  - consultar_fecha
-  - consultar_dia_de_la_semana
+  - greet
+  - goodbye
+  - query_time
+  - query_date
+  - query_weekday
 
 entities:
-  - fecha
+  - date
 
 slots:
-  fecha:
+  date:
     type: any
+    mappings:
+      - type: from_entity
+        entity: date
 
 responses:
-  utter_saludar:
+  utter_greet:
     - text: "¡Hola! ¿En qué puedo ayudarte?"
-  utter_despedirse:
+  utter_goodbye:
     - text: "¡Hasta luego! Que tengas un buen día."
 
 actions:
-  - action_consultar_tiempo
-  - action_consultar_fecha
-  - action_consultar_dia_de_la_semana
-  - utter_saludar
-  - utter_despedirse
+  - action_query_time
+  - action_query_date
+  - action_query_weekday
+  - utter_goodbye
+  - utter_greet
