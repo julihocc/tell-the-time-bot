@@ -5,3 +5,5 @@ This is a simple bot that tells you the current time in Spanish. It is built usi
 - `rasa train` to train the model
 - `rasa run actions` to run the action server
 - `rasa shell` to talk to the bot
+
+![alt text](image.png)
